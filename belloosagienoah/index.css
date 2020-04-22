@@ -38,16 +38,6 @@ h3 {
   font-family: 'Roboto Condensed';
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-  -webkit-tap-highlight-color: transparent;
-}
-
-a.active {
-  color: #fff;
-}
-
 li.cancel {
   color: white;
   position: fixed;
@@ -55,6 +45,10 @@ li.cancel {
   left: -8px;
   width: 7px;
   display: none;
+}
+
+.active {
+  color: #fff;
 }
 
 input[type="search"]#contacts {
@@ -116,7 +110,7 @@ li.nav-item {
 
 .col-lg-4 {
   position: relative;
-  width: 100%;
+  width: 0;
   overflow: auto;
   -ms-flex: 0 0 0;
   -webkit-box-flex: 0;
