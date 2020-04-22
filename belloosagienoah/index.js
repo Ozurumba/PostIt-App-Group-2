@@ -21,6 +21,7 @@ const openBar = () => {
         textArea[0].style.marginLeft = "36.6666667%";
     }
     sendIcon.style.display = "none";
+    closeSideBar.style.display = 'block';
 };
 
 const closeBar = () => {
@@ -35,6 +36,7 @@ const closeBar = () => {
     }
     sendIcon.style.display = "";
     sendIcon.style.left = "";
+    closeSideBar.style.display = 'none';
 };
 
 const altCloseBar = () => {
