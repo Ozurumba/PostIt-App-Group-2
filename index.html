@@ -1,92 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post-it/login-signup</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <meta name="keywords"
+        content="postit, postIt, social media, communication platform, bello osagie, bello osagie noah" />
+    <meta name="og:title" content="PostIt" />
+    <meta property="og:type" content="website, app">
+    <meta name="description"
+        content="A simple, light weight communication platform for web developers made by Bello Osagie" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="belloosagienoah">
+    <meta name="author" content="Bello Osagie, ts.learndev@gmail.com">
+    <meta name="designer" content="Bello Osagie Noah">
+    <meta name="owner" content="Bello Osagie Noah">
+    <meta name="twitter:creator" content="belloosagienoah">
+    <meta property="og:url" content="https://belloosagienoah.github.io/postit/">
+    <meta property="og:image" content="https://belloosagienoah.github.io/postit/bello.jpg">
+    <meta property="og:image" content="https://belloosagienoah.github.io/postit/bello.jpg">
+    <meta property="og:image:secure_url" content="https://belloosagienoah.github.io/postit/">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Roboto+Condensed:400,700&display=swap"
+        rel="stylesheet">
+    <title>PostIT</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="editor.css">
+    <script src="index.js" async></script>
+    <script src="editor.js" async></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' async></script>
 </head>
-<body> 
-    <div class="main-container">
-        <div class="form-container join-us">
-            <form action="#">
-                <div>
-                    <h2>Join Us</h2>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="fixed-top">
+                <ul class="nav">
+                    <h3>PostIt</h3>
+                    <i class='fas fa-search' id="search-bar"></i>
+                    <input type="search" name="search-bar" id="contacts-bar" placeholder="Search">
+                    <li class="nav-item nav-item1"><a href="#.html">Editor</a></li>
+                    <li class="nav-item  nav-item2 active"><a class="active" href="#.html">Group</a></li>
+                    <li class="nav-item  nav-item3"><a href="#.html">Setting</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul>
+                    <li class="cancel"><i class="material-icons">cancel</i></li>
+                    <li><input type="search" name="search-bar" id="contacts" placeholder="Search"></li>
+                    <li style="margin-left: -15px">Contacts</li>
+                    <div style="text-align: center;">
+                        <li class="contact"><img src="bello.jpg" alt="Adams profile pic"></li>
+                        <div class="caption">Adams</div>
+                        <li class="contact"><img src="bello.jpg" alt="Bello profile pic"></li>
+                        <div class="caption">Bello</div>
+                        <li class="contact"><img src="bello.jpg" alt="Peter  profile pic"></li>
+                        <div class="caption">Peter</div>
+                        <li class="contact"><img src="bello.jpg" alt="John Profile pic"></li>
+                        <div class="caption">John</div>
+                        <li class="contact"><img src="bello.jpg" alt="Michael Profile pic"></li>
+                        <div class="caption">Michael</div>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="github-icon">
+                    <a href="https://github.com" target="_blank"><i class='github fab fa-github'></i></a>
                 </div>
-                
-                <div class="link-media">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <section>
+                    <li><span class="material-icons">cancel</i></li>
+                    <div class="button"><button class="light-mode">Light Mode</button><button class="dark-mode">Dark
+                            Mode</button></div>
+
+                    <div>
+                        <textarea class="editor" rows="60" cols="40" placeholder="" autocomplete="off" wrap="on"
+                        spellcheck="false" autofocus></textarea>
+                    </div>
+                </section>
+
+                <div class="text-area">
+                    <i class="far fa-paper-plane"></i>
+                    <textarea class="textarea" name="" id="" cols="10" rows="10" autocomplete="on" wrap="soft"
+                        placeholder="Message contact..." autofocus></textarea>
                 </div>
 
-                <span>Post-It with email registration</span>
-                
-                <input type="Username" value="" placeholder="Username">
-                <input type="Email" value="" placeholder="Email">
-                <input type="text" value="" placeholder="password">
-                <div class="radio">
-                    <div>
-                        <span>Gender:</span>
-                    </div>
-                    <input type="radio" name="gender" value="male" :checked> Male
-                    <input type="radio" name="gender" value="Female" :checked> Female
-                    
-                </div>
-                <button class="button-enter ">Sign Up...</button>
-            </form>
-        </div>
-        <div class="form-container sign-in">
-            <form action="#">
-                
-                <h2>Sign In</h2>
-                <div class="link-media">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>Stay connected, Explore, Post-It</span>
-                
-                <input type="Username" value="" placeholder="Username">
-                <input type="Email" value="" placeholder="Email">
-                <a href="#" class="anchor">forgot your password?</a>
-                <button class="button-enter">Sign In...</button>
-            </form>
-        </div>
-        <div class="side-container">
-            <div class="information">
-                <div class="side sideright">
-                    <h2>
-                        Welcome to Post-It !!
-                    </h2>
-                    <p>
-                        Join us and connect with like-minds
-                        around the world...
-                    </p>
-    
-                    <button class="side-enter register-button">Sign Up</button>
-                </div>
-                <div class="side sideleft">
-                    
-                    <h2>
-                        Welcome Back !
-                    </h2>
-                    <p>
-                        Stay connected with Post-It <br>
-                        Log-in your personal details...
-                    </p>
-    
-                    <button class="side-enter signin-button">Sign In</button>
-                </div>
             </div>
-            
         </div>
-       
     </div>
-  
-    
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="script.js"></script>
+
 </body>
+
 </html>
