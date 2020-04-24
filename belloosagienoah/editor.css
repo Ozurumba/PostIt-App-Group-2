@@ -30,6 +30,10 @@ button {
   outline-color: transparent;
 }
 
+.active {
+  color: #fff;
+}
+
 .material-icons {
   position: relative;
   top: 60px;
@@ -62,8 +66,6 @@ section textarea {
   font-size: medium;
   overflow-y: auto;
   margin: auto;
-  position: relative;
-  z-index: 10000000;
   width: 100%;
   position: fixed;
   height: 450px;
@@ -74,5 +76,4 @@ section textarea {
 section textarea:focus {
   outline-color: transparent;
 }
-
 /*# sourceMappingURL=editor.css.map */
