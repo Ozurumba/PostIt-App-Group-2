@@ -1,4 +1,3 @@
-// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -26,7 +25,7 @@ function newElement() {
   li.style.borderRadius = "4px";
   li.style.padding = "5px";
   li.style.overflow = "auto";
-  li.style.maxHeight = "200px";
+  li.style.maxHeight = "300px";
   li.style.marginLeft = "40%";
   li.style.marginRight = "40px";
   li.style.fontSize = "medium";
