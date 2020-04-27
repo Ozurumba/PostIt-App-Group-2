@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="postit, github postit, social media, communication platform, bello osagie, bello osagie noah" />
+    <meta name="keywords" content="postit, github postit, social media, communication platform, bello osagie, bello osagie noah" />
     <meta name="og:title" content="PostIt" />
     <meta property="og:type" content="website, app">
-    <meta name="description"
-        content="A simple, light weight communication platform for web developers made by Bello Osagie" />
+    <meta name="description" content="A simple, light weight communication platform for web developers made by Bello Osagie" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="belloosagienoah">
     <meta name="author" content="Bello Osagie, ts.learndev@gmail.com">
@@ -24,85 +22,100 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Roboto+Condensed:400,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' async></script>
     <title>PostIT</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="editor.css">
     <link rel="stylesheet" href="msg.css">
-    <script src="index.js" async></script>
-    <script src="editor.js" async></script>
-    <script src="msg.js" async></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' async></script>
-</head>
+    <script src="./index.js" async></script>
+    <script src="./editor.js" async></script>
+    <script src="./sidebar.js" async></script>
+    <script src="./msg.js"></script>
+    <script src="./build/msg.bundle.js"></script>
+  </head>
 
-<body>
+  <body onclick="start_scroll_down()">
 
     <header>
-        <nav>
-            <div class="fixed-top">
-                <ul class="nav">
-                    <h3>PostIt</h3>
-                    <i class='fas fa-search' id="search-bar"></i>
-                    <input type="search" name="search-bar" id="contacts-bar" placeholder="Search">
-                    <li class="nav-item nav-item1 active">Editor</li>
-                    <li class="nav-item  nav-item2 active">Group</li>
-                    <li class="nav-item  nav-item3 active">Setting</li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="fixed-top">
+          <ul class="nav">
+            <h3>PostIt</h3>
+            <i class='fas fa-search' id="search-bar"></i>
+            <input type="search" name="search-bar" id="contacts-bar" placeholder="Search">
+            <li class="nav-item nav-item1 active">Editor</li>
+            <li class="nav-item  nav-item2 active">Group</li>
+            <li class="nav-item  nav-item3 active">Setting</li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <ul>
-                    <li class="cancel"><i class="material-icons">cancel</i></li>
-                    <li><input type="search" name="search-bar" id="contacts" placeholder="Search"></li>
-                    <li style="margin-left: -15px">Contacts</li>
-                    <div style="text-align: center;">
-                        <li class="contact"><img src="bello.jpg" alt="Adams profile pic"></li>
-                        <div class="caption">Adams</div>
-                        <li class="contact"><img src="bello.jpg" alt="Bello profile pic"></li>
-                        <div class="caption">Bello</div>
-                        <li class="contact"><img src="bello.jpg" alt="Peter  profile pic"></li>
-                        <div class="caption">Peter</div>
-                        <li class="contact"><img src="bello.jpg" alt="John Profile pic"></li>
-                        <div class="caption">John</div>
-                        <li class="contact"><img src="bello.jpg" alt="Michael Profile pic"></li>
-                        <div class="caption">Michael</div>
-                    </div>
-                </ul>
+      <div class="row">
+        <div class="col-lg-4">
+          <ul>
+            <li class="cancel"><i class="material-icons">cancel</i></li>
+            <li><input type="search" name="search-bar" id="contacts" placeholder="Search"></li>
+            <li style="margin-left: -15px">Contacts</li>
+            <div style="text-align: center;">
+              <li class="contact"><img src="bello.jpg" alt="Adams profile pic"></li>
+              <div class="caption">Adams</div>
+              <li class="contact"><img src="bello.jpg" alt="Bello profile pic"></li>
+              <div class="caption">Bello</div>
+              <li class="contact"><img src="bello.jpg" alt="Peter  profile pic"></li>
+              <div class="caption">Peter</div>
+              <li class="contact"><img src="bello.jpg" alt="John Profile pic"></li>
+              <div class="caption">John</div>
+              <li class="contact"><img src="bello.jpg" alt="Michael Profile pic"></li>
+              <div class="caption">Michael</div>
             </div>
-            <div class="col-lg-8">
-                <div class="github-icon">
-                    <a href="https://github.com" target="_blank"><i class='github fab fa-github'></i></a>
-                </div>
-            
-                <section>
-                    <li><span class="material-icons">cancel</i></li>
-                    <div class="button"><button class="light-mode">Light Mode</button><button class="dark-mode">Dark
-                            Mode</button></div>
-
-                    <div>
-                        <textarea class="editor" rows="60" cols="40" placeholder="" autocomplete="off" wrap="on"
-                        spellcheck="false"></textarea>
-                    </div>
-                </section>
-
-                <form action="" method="post">
-                    <div class="text-area header" id="myDIV">
-                        <ul id="myUL"></ul>
-                        <i class="far fa-paper-plane addBtn" onclick="newElement()"></i>
-                        <textarea class="textarea" name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft"
-                            placeholder="Message contact..." autofocus></textarea>
-                    </div>
-                </form>
-                
-            </div>
+          </ul>
         </div>
+        <div class="col-lg-8" onmouseover="stop_scroll_down();">
+          <div class="github-icon">
+            <a href="https://github.com" target="_blank"><i class='github fab fa-github'></i></a>
+          </div>
+
+          <section>
+            <li><span class="material-icons">cancel</i></li>
+            <div class="button"><button class="light-mode">Light Mode</button><button class="dark-mode">Dark
+                Mode</button></div>
+
+            <div>
+              <textarea class="editor" rows="60" cols="40" id="my_Input" value="Type Something" placeholder="" autocomplete="off" wrap="on" spellcheck="false"></textarea>
+              <div>
+                <div class="tooltip">
+                  <button onclick="myFunction()" onmouseout="outFunc()" class="copy">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                    Copy text
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <ul id="myUL"></ul>
+
+        </div>
+      </div>
     </div>
 
-</body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <footer>
+            <form action="" method="post" id="top">
+              <div class="text-area header" id="myDIV">
+                <i id="myBtn" class="far fa-paper-plane addBtn" onclick="newElement()"></i>
+                <textarea class="textarea" name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft" placeholder="Message contact (F5 or Alt key to send)..." autofocus></textarea>
+              </div>
+            </form>
+          </footer>
+        </div>
+      </div>
+    </div>
+    
+  </body>
 
 </html>
