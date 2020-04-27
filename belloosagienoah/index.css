@@ -115,9 +115,8 @@ li.nav-item {
 }
 
 .col-lg-4 {
-  position: relative;
-  width: 100%;
   overflow: auto;
+  width: 100%;
   -ms-flex: 0 0 0;
   -webkit-box-flex: 0;
   flex: 0 0 0;
@@ -126,6 +125,8 @@ li.nav-item {
   background-color: purple;
   z-index: 8000;
   top: 59px;
+  position: fixed;
+  bottom: 0;
 }
 
 .col-lg-8 {
@@ -140,6 +141,23 @@ li.nav-item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.col-lg-12 {
+  width: 100%;
+  -ms-flex: 0 0 100%;
+  -webkit-box-flex: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+#myUL {
+  margin-top: 65px;
+}
+
+/* .header {
+    background-color: #f0f0f0;
+    padding-top: 10px;
+} */
 
 textarea.textarea {
   width: 90%;
@@ -301,4 +319,9 @@ i.far.fa-paper-plane {
     left: 83%;
   }
 }
+
+footer {
+  padding-top: 60px;
+}
+
 /*# sourceMappingURL=index.css.map */
