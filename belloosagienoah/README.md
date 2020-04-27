@@ -4,3 +4,5 @@
 - You can find the deployed project at https://belloosagienoah.github.io/postit/
 - You can also find the project repository at https://github.com/belloosagienoah/postit
 - See more of my projects at https://github.com/belloosagienoah/
+- Website at [`TechStack`](https://techstack.surge.sh)
+- You can support me on [kofi](https://ko-fi.com/ts4all)
